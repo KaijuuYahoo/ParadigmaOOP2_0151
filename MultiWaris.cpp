@@ -17,7 +17,7 @@ class pekerja : virtual public orang{
         }  
 };
 
-class pelajar : virtual public orang{
+class pelajar : vipublic orang{
     public :
     int umur;
     pelajar (int pUmur):
