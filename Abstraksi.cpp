@@ -19,3 +19,14 @@ class AbstraksiKlas{
         }
    
 };
+
+
+int main(int argc, char const *argv[])
+{
+    AbstraksiKlas ak;
+    ak.
+    return 0;
+}
+
+
+
