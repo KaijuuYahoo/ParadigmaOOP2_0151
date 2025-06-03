@@ -8,6 +8,14 @@ class AbstraksiKlas{
         //Method Untuk mengisi nilai
         //Private member
 
-        vo
-    
+        void setXY(string a, string b){
+            x = a;
+            y = b;
+        }
+        //Menampilkan Nilai
+        void display (){
+            cout << "x = " << x <<endl;
+            cout << "y = " << y <<endl;            
+        }
+   
 };
