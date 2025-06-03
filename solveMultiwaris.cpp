@@ -9,10 +9,31 @@ class orang{
             cout << "orang dibuat dengan umur " << umur <<"\n"<<endl;
         }  
 };
-class pekerja :  public orang{
+class pekerja : public orang{
     public :
     pekerja (int pUmur):
         orang(pUmur){
             cout << "Pekerja dibuat\n"<<endl;
         }  
 };
+class pelajar : public orang{
+    public :
+    int umur;
+    pelajar (int pUmur):
+        orang(pUmur){
+            cout << "Pelajar dibuat\n"<<endl;
+        }  
+};
+class budi : public pekerja,public pelajar {
+    public:
+        budi(int pUmur):
+        pelajar(pUmur),
+        pekerja(pUmur){
+            cout << "Budi dibuat\n"<<endl;
+        }
+};
+int main(int argc, char const *argv[])
+{
+    budi a(12);
+    return 0;
+}
