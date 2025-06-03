@@ -2,7 +2,16 @@
 using namespace std;
 
 class seseorang{
-    virtual void pesan(){
-        cout << ""
-    }
+    public:
+        virtual void pesan() = 0;
+        //virtual void pesan(){
+            //cout << "Pesan dari seseorang" <<endl;
+        //}
+};
+
+class joko:public z{
+    public:
+        void pesan(){
+            cout << "Pesan dari joko" <<endl;
+        }
 };
